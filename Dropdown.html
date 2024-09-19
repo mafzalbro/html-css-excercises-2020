@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style type="text/css">
+      * {
+         box-sizing:border-box;
+      }
+      i {
+         display: inline-block;
+         width: 30px;
+         height: 30px;
+         background-image: url(images/icons.png);
+         filter:saturate(800%) contrast(490%);
+         margin-bottom: -5px;
+         text-align:left;
+         margin-left:0px;
+         transition:0.2s ease-in-out;
+      }
+      .dd-content a:active i{
+         transform:rotate(3600deg);
+}
+      i.home-icon {
+         background-position: top 0 left 0;
+         margin-right:10px;
+      }
+      i.envelope-icon {
+         background-position: top 0 left -30px;
+         margin-right:10px;
+      }
+      i.bell-icon {
+         background-position: top 0 left -60px;
+         margin-right:10px;
+      }
+      i.dashboard-icon {
+         background-position: top 0 left -90px;
+         margin-right:10px;
+      }
+      .dd {
+         position: relative;
+         display: inline-block;
+         
+      }
+      .dd-btn {
+         padding: 15px;
+         text-align: center;
+         background: #333e;
+         border: 1px solid #000;
+         width: 300px;
+         height:60px;
+         color: #f8f9f9;
+         outline:none;
+         border-radius:2px;
+      }
+      .dd-content {
+         position: absolute;
+         width: 100%;
+         box-shadow: -1px -1px 2px rgba(0,0,0,0.50), 1px 4px 2px rgba(0,0,0,0.5);
+         height: 0px;
+         transition: height 1s;
+         overflow: hidden;
+         
+      }
+      .dd:hover > .dd-content {
+         height: 260px;
+      }
+      .dd-content a{
+         display: block;
+         height: 60px;
+         padding: 15px;
+         text-decoration:none;
+         color: black;
+         border: 2px solid #444;
+         margin:4px;
+         text-align:center;
+         font-weight:900;
+         border-radius:3px;
+         /*line-height:-20px;*/
+      }
+   </style>
+</head>
+<body>
+   <div class="dd">
+      <button class="dd-btn"> Menu </button>
+      <div class="dd-content">
+         <a> <i class="home-icon"></i> Home </a>
+         <a> <i class="dashboard-icon"></i> Dashboard </a>
+         <a> <i class="envelope-icon"></i> Messages </a>
+         <a> <i class="bell-icon"></i> Notifications </a>
+      </div>
+   </div>
+</body>
+</html>

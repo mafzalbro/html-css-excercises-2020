@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>tooltip</title>
+</head>
+<body>
+<style>
+::selection{
+  color:blue;
+  background:white;
+}
+.tol{
+  background:#eee;
+  color:red;
+  font-size:22px;
+}
+.tol:hover .toltxt{
+  background:#eee;
+  color:black;
+  left:10px;
+  visibility:visible;
+  z-index:1;
+}
+.toltxt{
+  color:black;
+  background:#eee;
+  visibility:hidden;
+  width:100px;
+  display:inline-block;
+  height:100px;
+  font-size:20px;
+}
+.tol:hover::after{
+  content:"New One ";
+/*  border-top-color:1px solid red;*/
+  
+}
+</style>
+
+<div class="tol">
+Hello! Kese Ho
+<span class="toltxt">Tooltip Hai Ye</span>
+
+</div>
+</body>
+</html>

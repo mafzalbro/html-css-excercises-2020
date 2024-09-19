@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+<style>
+body{
+  background:orange;
+}
+input[type="text"]{
+  height:20px;
+  width:270px;
+  flex-wrap:wrap;
+  color:#fff;
+  background:none;
+  outline:none;
+  border:0px solid rgba(0,0,0,0.2);
+  border-radius:10px;
+  padding:14px;
+  margin:30px auto;
+  font-size:25px;
+  font-weight:300;
+  text-transform:uppercase;
+  box-shadow:1px 2px 0px 0px rgba(0,0,0,0.1),4px 4px 0px 0px rgba(0,0,0,0.06),1px 2px 1px 0px rgba(0,0,0,0.08),-1px -1px 1px 0px rgba(0,0,0,0.1);
+}
+input[type="text"]::placeholder{
+  color:#fff;
+}
+button{
+  height:40px;
+  width:110px;
+  text-wrap:wrap;
+  color:white;
+  background:darkorange;
+  outline:none;
+  border:.1px solid #343;
+  border-radius:2px;
+  font-weight:400;
+  text-transform:none;
+  margin:14px;
+  padding:9px;
+  display:inline;
+  font-size:15.4px;
+  transition:.1s;
+  box-shadow:1px 2px 0px 0px rgba(0,0,0,0.01),4px 4px 1px 0px rgba(0,0,0,0.06),1px 2px 1px 0px rgba(0,0,0,0.08),1px 1px 3px 3px rgba(0,0,0,0.01);
+}
+button:active{
+  transform:scale(0.95);
+  border:0.2px solid blue;
+}
+hr{
+  background:rgba(0,0,0,0.07);
+  border:.01px solid rgba(0,0,0,0.07);
+}
+</style>
+
+<form name="fom">
+<input name="txt" type="text" disabled placeholder="Print Time">
+</form>
+<button onclick="fom.txt.value = Date()">The time is?</button>
+<button onclick="fom.txt.value = '' ">Clear</button>
+<hr />
+
+</body>
+</html>

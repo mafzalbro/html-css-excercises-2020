@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+
+<br /><br /><br /><br /><br />
+
+
+<style>
+.Cbag{
+  background:#eee;
+  height:220px;
+  width:180px;
+  margin:;
+  color:white;
+  position:relative;
+  padding:0px;
+  left:21%;top:1%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transform:scale(1.7);
+  border:0px groove black;
+  border-radius:0px;
+  box-shadow:0.1px 0.2px 1px #333;
+  overflow:hidden;
+}
+
+@media screen and max-width(400px){
+  .Cbag{transform:scale(5);}
+}
+/*table.tab{
+  border:1px solid red;background:red;
+  color:white;height:;width:;
+}*/
+ input[type="button"] {
+  color:#444;
+  height:30px;
+  width:37px;
+  border:0px solid;
+  background-color:#eee;
+  border-radius:0px;
+  transition:0.2s;
+  outline:0px solid black;
+  font-weight:300;
+  padding:4px;
+}
+ input[type="button"]:hover{
+ transform:scale(1);
+ background:#ddd;
+}
+input[type="button"]:active{background:#999;}
+
+
+ input[type="text"] {
+  color:#666;
+  height:50px;
+  width:165px;padding-left:9px;
+  border:0px solid;
+  border:0.1px solid #ccc;
+  background-color:#ddd;
+  border-radius:0px;
+  outline:.0px solid black;
+  font-weight:300;
+   font-size:25px;
+  padding:3px;
+}
+
+</style>
+
+<!--div class="Cbag">Afzal</div>
+
+ <br><br><br><br>-->
+
+
+<form name="cform">
+
+<div class="Cbag">
+
+<table border="0" class="tab">
+
+<tr>
+
+<td rowspan="1" colspan="4">
+
+<input type="text" name="display" disabled>
+
+</td>
+</tr>
+
+
+ 
+<tr>
+<td><input type="button" value="1" onclick="cform.display.value += 1"></td>
+<td><input type="button" value="2" onclick="cform.display.value += 2"></td>
+<td><input type="button" value="3" onclick="cform.display.value += 3"></td>
+<td><input type="button" value="+" onclick="cform.display.value += '+'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="4" onclick="cform.display.value += 4"></td>
+<td><input type="button" value="5" onclick="cform.display.value += 5"></td>
+<td><input type="button" value="6" onclick="cform.display.value += 6"></td>
+<td><input type="button" value="-" onclick="cform.display.value += '-'"></td>
+</tr>
+
+
+<tr>
+<td><input type="button" value="7" onclick="cform.display.value += 7"></td>
+<td><input type="button" value="8" onclick="cform.display.value += 8"></td>
+<td><input type="button" value="9" onclick="cform.display.value += 9"></td>
+<td><input type="button" value="x" onclick="cform.display.value += '*'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="C" onclick="cform.display.value = '' "></td>
+<td><input type="button" value="0" onclick="cform.display.value += 0"></td>
+<td><input type="button" value="=" onclick="cform.display.value = eval(cform.display.value)"></td>
+<td><input type="button" value="÷" onclick="cform.display.value += '/'"></td>
+</tr>
+
+
+</div>
+
+
+
+
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+<style>
+ body{
+  margin:2px;
+  padding:0;
+ }
+ .loader{
+  height:50px;
+  width:50px;
+  border-top:6px solid blue;
+  border-left:6px solid red;
+  border-bottom:6px solid #eee;
+  border-right:6px solid lightgreen;
+  border-radius:100px;
+  animation:load 0.1s alternate infinite;
+  transform:translate(-50%,-50%);
+  position:relative;
+  top:50%;
+  left:50%;
+ }
+ .box{border-radius:0px;
+  border:0px solid #000;
+  height:200px;
+  width:100%;
+  margin:6px auto;
+  padding:6px;
+  overflow:hidden;
+  background-image:url(Download/fb1.jpg);
+ }
+ .box:hover{
+  background:#766;
+  color:#fff;
+ }
+ .box img{
+  border-radius:10px;
+  width:100%;
+  height:auto;
+ }
+@keyframes load{
+  from{transform:translate(-50%,-50%) rotate(0deg);}
+  to{transform:translate(-50%,-50%) rotate(7770deg);}
+ }
+</style>
+<div class="box"><img src="/Download/fb1.jpg">
+<div class="loader"></div>
+  <br><br>
+<br><br>
+</div>
+<div class="" style="margin:6px;border:2px solid;padding:10px;overflow:auto;">
+<h1>Image Description</h1>
+Facebook is a platform to provide us with engagement and entertainment with old and new friends .Therefore most of the people think about it as an entertainment platform.
+
+We know that a place where a large number of people (in billions) are gathered,there we can sell anything which we want.
+
+Here the idea of marketing is arises on facebook.Now we can define Facebook marketing easily:
+Facebook provides us a platform where we can market our products to sell them.
+
+</div>
+<div class="box"><img src="/Download/fb2.jpg">
+<div class="loader"></div>
+</div>
+<div class="box"><img src="/Download/fb3.jpg">
+<div class="loader"></div>
+</div>
+<div class="box"><img src="/Download/fb4.jpg">
+<div class="loader"></div>
+</div>
+</body>
+</html>

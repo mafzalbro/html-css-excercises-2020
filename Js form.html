@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>js forms</title>
+</head>
+<body>
+<script>
+function abc()
+{
+ Name=document.forms["check"]["Name"].value
+if(Name=="")
+{
+ document.getElementById("name").innerHTML="--required *  ";
+return false
+}
+else
+{
+ document.getElementById("name").innerHTML=" ";
+return false
+}
+
+
+ mail=document.forms["check"]["mail"].value
+if(mail=="")
+{
+ document.getElementById("email").innerHTML=". ---required *  ";
+ return false
+}
+
+password=document.forms["check"]["pw"].value
+if(password=="")
+{
+ document.getElementById("pass").innerHTML=". ---required *  ";
+return false
+}
+
+}
+
+</script>
+<style>
+input[type]{
+  float:left;
+  color:red;
+  outline:0;
+}
+input[type]{
+  border:2px solid red;
+  border-radius:10px;
+  padding:7px;
+  background:yellow;
+  font-weight:900;
+}
+p{color:#333;}
+
+</style>
+<div>
+<form name="check">
+<table>
+<tr>
+<td>
+<p>Name</p>
+<input type="text" name="Name"><span id="name" style="color:red;"></span>
+
+
+
+<p>Email</p><input id="mail" type="email" name="mail"><span id="email" style="color:red;"></span>
+<br /><br />
+<p>password</p>
+<input type="password" name="pw"><span id="pass" style="color:red;"></span>
+<br /><br />
+<p>Confirm Password</p>
+<input type="password" name="confirmpw"><span id="cpass" style="color:red;"></span>
+
+<br /><br />
+<input type="button" value="send" name="send" onclick="return(abc())">
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+</body>
+</html>

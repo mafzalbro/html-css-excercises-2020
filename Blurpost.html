@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Blur</title>
+</head>
+<body>
+<style>
+body{
+  margin:30px;
+}
+.container{
+  color:#fff;
+  margin:0 auto;
+}
+#g{
+  height:100px;
+  background:red;
+  margin:1px;
+  transition:0.1s;
+}
+
+.container:hover #g{
+  filter:blur(10px);
+  opacity:1;
+  transform:scale(0.95);
+}
+ .container #g:hover{
+  filter:blur(0px);
+  transform:scale(1.2);
+  opacity:1;
+}
+.container #g:nth-child(1){
+  background:rgba(25,55,60,1);
+}
+.container #g:nth-child(2){
+  background:rgba(0,450,0,1);
+}
+.container #g:nth-child(3){
+  background:pink;
+}
+.container #g:nth-child(4){
+  background:blue;
+}
+
+</style>
+<div class="container">
+<div id="g">
+
+</div>
+<br>
+<div id="g">
+
+</div>
+<br>
+<div id="g">
+
+</div>
+<br>
+<div id="g">
+
+</div>
+</div>
+
+
+
+
+==============================
+<br><br>
+<style>
+  body{
+    margin:0px auto;
+  }
+.card{
+  height:360px;
+  width:70%;
+  background:#eee;
+  border:1px solid #343;
+  overflow:hidden;
+  border-radius:20px;
+  /*padding:0px;*/
+}
+.circle{
+  height:300px;
+  width: 100%;
+  background:#343;
+  clip-path:circle(200px at center -60px);
+  color:#fff;
+  font-weight:900;
+  font-size:80px;
+  text-align:center;
+  line-height:150px;
+}
+</style>
+<div class="card">
+<div class="circle">
+01
+</div>
+</div>
+
+<br /><br />
+
+<div class="card">
+<div class="circle">
+02
+</div>
+</div>
+
+<br /><br />
+
+<div class="card">
+<div class="circle">
+03
+</div>
+</div>
+
+</body>
+</html>

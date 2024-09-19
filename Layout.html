@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>layout</title>
+</head>
+<body class="container">
+<style>
+*{
+  box-sizing:border-box;
+  padding:0px;
+  margin:0px;
+}
+#Header{
+  background:white;
+  font-size:23px;
+  border:0px solid lightgrey;
+  height:100px;
+  width:100%;
+  display:inline-block;
+  padding:0px;
+  margin-top:40px;
+  border-radius:0px;
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:1px 0.6px 0px lightgrey;
+  text-align:center;
+  line-height:100px;
+  color:rgba(0,0,0,0.7);
+  text-transform:none;
+  text-shadow:0px 0px 0px #fff;
+}
+#menu{
+  margin:0px;
+  padding:0px;
+  width:100%;
+  position:relative;
+  display:inline;
+  top:-100px;
+  color:#333;
+  background:none;
+  text-align:left;
+  font-weight:300;
+}
+#menu ul{
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:50px;
+  position:relative;
+  display:block;
+  color:#333;
+  background:#333;
+  
+  
+}
+#menu ul li{
+  width:33.2%;
+  float:left;
+  height:50px;
+  margin:0px;
+  list-style:none;
+  color:#fff;
+  text-align:center;
+  padding:0px;
+  line-height:50px;
+  border-right:0.1px solid black;
+}
+#menu select.drop{
+  height:100%;
+  width:100%;
+  background:none;
+  border:none;
+  outline:none;
+  color:#fff;
+  padding:0px;
+  margin:0px;
+}
+#menu select.drop:hover{
+  color:#333;
+}
+#menu ul li:hover{
+  background:#fff;
+  color:#333;
+}
+#menu ul li h3{
+  border:0px solid;
+  background:#555;
+}
+#menu ul li h3:hover{
+  color:#fff;
+  background:#555;
+  transform:scale(1.05);
+}
+.container{
+  background:#eee;
+  position:relative;
+  padding:0px;
+  margin:0px auto;
+}
+.box{
+  font-weight:300;
+  position:flex;
+  flex-items:center;
+  overflow:hidden;
+  border:0px solid #223;
+  padding:3px;
+  height:376px;
+  padding:10px;
+  overflow:auto;
+}
+
+.box1 , .box2{
+  background:white;
+  border:0px solid lightgrey;
+  height:360px;
+  text-align:justify;
+  display:inline-block;
+  position:relative;
+  box-shadow:1px 0.6px 0px lightgrey,-0.3px -0.3px 0px lightgrey;
+  overflow:auto;
+}
+
+.box1{
+  width:73%;
+  top:-23.5%;
+  position:relative;
+  padding:10px;
+  height:360px;
+  overflow:auto;
+}
+.box1 .content{
+  color:rgba(0,0,0,0.4);
+  padding:4px;
+  overflow:auto;
+}
+.box1 h1{color:#ccc111;}
+.box2{
+  width:25%;
+  overflow:auto;
+  color:#fff;
+  text-align:justify;
+  position:relative;
+  height:360px;
+  padding-left:0px;
+  border:0.1px solid;
+  overflow:auto;
+}
+
+.box2 div{
+  height:32%;
+  padding:0px;
+  margin:3px auto;
+ /* margin-top:px;
+  margin-bottom:14px;*/
+  width:90%;
+  line-height:100px;
+  background:grey;
+  border:0px solid #333;
+  transition:all 0.4s;
+  filter:blur(0px) opacity(0.4);
+  overflow:auto;
+}
+.box2 div:hover{
+  transform:scale(1.01);
+  background:#ccc111;
+  filter:opacity(0.8);
+}
+.fake-img{
+  height:150px;
+  padding:0px;
+  margin:0px auto;
+  margin-top:10px;
+  width:93%;
+  line-height:;
+  background:grey;
+  color:#fff;
+  text-align:center;
+  transition:all 0.4s;
+  filter:blur(0px) opacity(0.7);
+  overflow:auto;
+  
+}
+img{
+  height:auto;
+  width:100%;
+}
+.fake-img:hover{
+  transform:scale(1.1);
+  background:#ccc111;
+  filter:opacity(0.8);
+}
+.read-more{
+  position:relative;
+  height:50px;
+  margin:30px auto;
+  left:23%;
+  width:170px;
+  line-height:50px;
+  background:#333;
+  color:#fff;
+  text-align:center;
+  transition:all 0.1s;
+  border:none;
+  outline:none;
+  font-weight:200;
+  font-size:20px;
+  
+  
+}
+.read-more:hover{
+  transform:scale(1.01);
+  filter:opacity(0.7);
+}
+.welcome{
+  width:90%;
+  top:-19%;
+  position:relative;
+  font-weight:300;
+  height:430px;
+  padding:30px;
+  margin:0 auto;
+  background:#fff;
+  box-shadow:1px 0.6px 0px lightgrey,-0.2px -0.2px 0px lightgrey;
+  text-align:justify;
+  color:#ccc111;
+  overflow:auto;
+}
+.welcome h1{
+  text-align:center;
+}
+.card{
+  width:90%;
+  top:-19%;
+  position:relative;
+  font-weight:300;
+  height:330px;
+  padding:10px;
+  margin:0 auto;
+  background:#fff;
+  box-shadow:1px 0.6px 0px lightgrey,-0.2px -0.2px 0px lightgrey;
+  text-align:center;
+  color:#ccc111;
+}
+.card::after{
+  content:'M Afzal';
+  width:150px;
+  height:150px;
+  display:block;
+  color:rgba(0,0,0,0.2);font-weight:900;font-size:25px;
+  border:10px solid rgba(0,0,0,0.05);
+  top:20px;position:relative;
+  left:0px;
+  border-radius:100px;
+  line-height:150px;
+  margin:0px auto;
+}
+.card-disc{
+  color:rgba(0,0,0,0.4)
+}
+footer{
+  position:relative;
+  display:block;
+  bottom:0px;
+  top:100px;
+  color:white;
+  background:#333;
+  width:100%;
+  height:100px;
+  line-height:19px;
+  font-weight:100;
+  text-align:center;
+  font-size:25px;
+  
+}
+
+</style>
+
+<div id="Header">
+<h1>l am M.Afzal</h1>
+</div>
+<br><br><br>
+<br><br><br>
+<div id="menu">
+
+<br>
+<ul>
+<li><h3>Menu</h3></li>
+<li>Home</li>
+<li>
+<select class="drop">
+<option class="drop0" disabled defualt selected>
+Choose---
+</option>
+<option class="drop1">
+ Websites News
+</option>
+<option class="drop2">
+  Web Designs
+</option>
+<option class="drop3">
+  HTML5 Forms
+</option>
+<option class="drop4">
+  HTML5 Banners
+</option>
+</select>
+
+</li>
+</ul>
+</div>
+
+
+
+
+<div class="card">
+<h1>Introduction</h1>
+<br>
+<div class="card-disc">My Name Is M Afzal.I am a Web Designer,Content writer and Logo Designer.</div>
+</div>
+<br><br>
+<div class="welcome">
+<h1>Welcome Note</h1>
+<br>
+<div class="card-disc">First of all thanks for visit this page.Actually i guess you are seeking a person which can develop your site same like as you want.Then welcome here,you are at the right place.
+<br><br>
+You know better that how much this is important to find a right person for any task.So,i will do more struggle to satisfy you.
+And how much i can demand it will depend upon work.
+<br><br>
+High quality means high price more struggle,Low quality means low price less struggle.
+</div>
+</div>
+
+
+<br><br><br>
+
+<div class="box">
+<div class="box1">
+
+<div class="content">
+<h1>Web Service</h1>
+<p>Hey I am from lahore and wants to see development of websites.
+Hey I am from lahore and wants to see development of websites.
+Hey I am from lahore and wants to see development of websites.</p>
+
+<div class="fake-img"><img src="/Download/Afzal1.webp"></div>
+</div>
+</div>
+
+<div class="box2">
+<div>Image 1</div>
+<div>Image 2</div>
+<div>Image 3</div>
+</div>
+<!--<div class="box3">
+</div>
+<div class="box4">
+</div>-->
+</div>
+
+<button class="read-more">
+<p>See more ›››</p>
+</button>
+
+
+
+
+<div id="footer">
+ <footer><br />All right reserved <br /><br /> <h6>©2020-2021</h6>
+
+</footer>
+</div>
+
+</body>
+</html>

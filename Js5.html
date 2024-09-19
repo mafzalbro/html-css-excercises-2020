@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Change It</title>
+</head>
+<body>
+<script>
+x=0;
+function increment(){
+x++;
+document.getElementById("Change").innerHTML=x;
+
+if(x>=9990)
+{
+document.getElementById("Change").style.fontSize="50px";
+}
+
+
+setInterval(increment,10);
+}
+function dec()
+{
+x--;
+document.getElementById("Change").innerHTML=x;
+}
+
+
+
+
+</script>
+
+<div style="text-shadow:0px 0px 4px black;font-size:60px; color:white;background:red;display:inline-block;">
+
+<h1 style="width:306px;text-align:center; height:100px;" id="Change" bgcolor="white">0</h1>
+
+<button style="width:100px; height:100px;float:left;" name="dec" onclick="dec()" id="dec">Decrement</button>
+<button style="width:100px; height:100px;float:right;" name="increment" onclick="increment()" id="increment">Increment</button>
+
+
+</div>
+</body>
+</html>

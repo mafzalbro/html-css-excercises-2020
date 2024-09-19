@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>js 7</title>
+</head>
+<body>
+
+<style>
+body{
+  background:#569;
+  color:#fff;
+  box-sizing:border-box;
+  text-align:center;
+  font-size:20px;
+  font-weight:300;
+}
+
+p{
+  background:red;
+  color:#fff;
+  padding:30px;
+  border:10px double;
+  border-radius:0% 40% 0px;
+  margin:70px 0px 22px;
+  font-size:21px;
+}
+b{ 
+  font-size:22px;
+  font-weight:900;
+}
+</style>
+
+<p id="NDay"><span>0</span></p>
+
+<script>
+document.write(new Date());
+var day;
+switch(new Date().getDay())
+{
+case 0:
+  day="Sunday";
+  break;
+case 1:
+  day = "Monday";
+  break;
+case 2:
+  day="Tuesday";
+  break;
+case 3:
+  day = "Wednesday";
+  break;
+case 4:
+  day = "Thirsday";
+  break;
+case 5:
+  day = "Friday";
+  break;
+case 6:
+  day = "Saturday";
+  break;
+
+default:
+  day="No Need"
+}
+document.getElementById("NDay").innerHTML="Today is"+ " <b>" + day + "</b>";
+</script>
+
+</body>
+
+</html>

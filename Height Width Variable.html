@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+ <style>
+ input{
+  border:1.4px solid;
+  outline:none;
+  padding:7px;
+  margin:2px;
+  background:#ccc;
+  border-radius:4px;color:black;
+ }
+ input[type="submit"]{
+  background:#333;
+  border-radius:3px;
+  color:#fff;
+ }
+ #output{
+  width:100%;
+  overflow:auto;
+ }
+
+ </style>
+<!--
+<form name="dis">
+<input type="number" name="play" id="display">
+<input type="button" value="button" onclick="fun2()">
+</form>-->
+
+<input type="Number" id="input" placeholder="Put Height size" >
+<input type="submit" id="gets" value="Change Height " onclick="fun()">
+<input type="Number" id="input1" placeholder="Put Width size" >
+<input type="submit" id="gets" value="Change Width  " onclick="fun1()">
+<input type="Number" id="input2" placeholder="Put border size" >
+<input type="submit" id="gets" value="Change border  " onclick="fun2()">
+
+<br><br>
+<div id="output">
+
+</div>
+<script>
+var input =document.getElementById("input");
+var input1 =document.getElementById("input1");
+var input2 =document.getElementById("input2");
+var gets =document.getElementById("gets");
+var output =document.getElementById("output");
+
+function fun(){
+  var got = input.value;
+  //output.innerHTML = "border-radius:" + got + "px;";
+ // output.style.borderRadius = got + "px";
+  output.style.border = "1" + "px solid #333";
+  output.style.height = got + "px";
+}
+function fun1(){
+  var got1 = input1.value;
+  output.style.width = got1 + "px";
+}
+function fun2(){
+  var got2 = input2.value;
+  output.style.border = got2 + "px solid";
+}
+</script>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>js</title>
+</head>
+<body>
+<script>
+x=0;
+
+setInterval(function changee()
+
+{
+
+if(x==1){
+document.getElementById("red1").style.background="pink";
+document.getElementById("red1").innerHTML="pink1";
+document.getElementById("red1").style.fontSize="25px";
+
+document.getElementById("red2").style.background="blue";
+document.getElementById("red2").innerHTML="Blue2";
+document.getElementById("red2").style.fontSize="25px";
+
+document.getElementById("red3").style.background="lightgray";
+document.getElementById("red3").innerHTML="lightgrey3";
+document.getElementById("red3").style.fontSize="25px";
+
+document.getElementById("red4").style.background="green";
+document.getElementById("red4").innerHTML="green4";
+document.getElementById("red4").style.fontSize="25px";
+}
+
+x++;
+
+if(x==2)
+{
+x=0;
+document.getElementById("red").style.background="red";
+}
+
+},300);
+</script>
+<!--<button style="transform:scale(2);margin:20px 50px auto;" id="change" name="change" onclick="changee()">Change</button>-->
+
+
+<div id="red" style="display:block;">
+
+<div id="red1" style="border:.2px solid;background:red;width:90%;height:100px;">red1</div>
+<div id="red2" style="border:.2px solid;background:red;width:90%;height:100px;">red2</div>
+<div id="red3" style="border:.2px solid;background:red;width:90%;height:100px;">red3</div>
+<div id="red4" style="border:.2px solid;background:red;width:90%;height:100px;">red4</div>
+
+</div>
+
+
+</body>
+</html>

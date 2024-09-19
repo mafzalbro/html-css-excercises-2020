@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>filter</title>
+</head>
+<body>
+<style>
+body{
+  background:green;
+}
+.box{
+  margin:100px auto;
+  transform:scale(1.5) rotate(0deg);
+  width:200px;
+  height:200px;
+  background:none;
+  border:0.1px solid white;
+  color:#3454;
+  text-align:center;
+  font-size:30px;
+  filter:saturate(300%) hue-rotate(1deg);
+  box-shadow:2px 1px 3px black;
+  transition:all 2s;
+}
+.box:hover{
+  box-shadow:inset 5px 3px 13px black;
+  transform:scale(1.5) rotate(0deg);
+}
+
+.spnt{
+  filter:blur(0.1px);
+  color:#3343;
+}
+
+button{
+  margin:100px auto 500px;
+  position:relative;
+  left:30%;
+  bottom:0px;
+  width:99px;
+  height:100px;
+  background:none;
+  border:0px solid white;
+  outline:0px solid white;
+  border-radius:100px;
+  outline-offset:30px;
+  color:white;
+  text-align:center;
+  font-size:20px;
+  text-shadow:1px 1px 2px black;
+  transition:all .3s linear;
+  opacity:border 0;
+  font-weight:900;
+}
+button:active{
+   border:0px solid red;
+  outline:0px solid white;
+  background:#eeeeee;
+  border-radius:0px;
+  outline-offset:0px;
+  width:164px;
+  height:164px;
+  margin:100px auto 500px;
+  position:relative;
+  left:18%;
+  bottom:30px;
+  opacity:0.5;
+  color:white;
+}
+</style>
+<div class="box"><span class="spnt">Filters</span> Of Css</div>
+<button>Button</button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Pangination</title>
+   <style type="text/css">
+      .pagination-container {
+         text-align: center;
+         border: 1px solid;
+         padding: 4px;
+      }
+      .pagination {
+         display: inline-block; /* makes the ul act like an inline element but with controllable width and height */
+         margin: 0;
+         padding: 0 0px;
+         width:100%;
+         background: #ff8a9d;
+         border-radius: 0px;
+      }
+      .pagination li {
+         display: inline-block;
+          /* makes the li act like inline elements */
+      }
+      .pagination a {
+         color: black;background:red;
+         text-decoration: none;
+         border-radius:50px;
+         margin: 5px;
+         margin-top: 10px;
+         padding: 10px 17px;color:white;
+         float: left; /* floats the anchor elements to the left of each other */
+      }
+      .pagination a:hover{
+         background: #fff;
+         color: red;
+      }
+   </style>
+</head>
+<body>
+   <div class="pagination-container">
+      <ul class="pagination">
+         <li><a href="#">⟨</a></li>
+         <li><a href="#">1</a></li>
+         <li><a href="#">2</a></li>
+         <li><a href="#">3</a></li>
+         <li><a href="#">4</a></li>
+         <li><a href="#">5</a></li>
+         <li><a href="#">⟩</a></li>
+      </ul>
+   </div>
+</body>
+</html>

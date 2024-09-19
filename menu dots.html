@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+<script>
+ function but(){
+  var change = document.getElementById("lines");
+  change.innerHTML= "Google";
+}
+</script>
+<style>
+ #lines{
+  height:40px;
+  width:80px;
+  background:#000;
+  margin:150px;
+  border-radius:10px;
+  position:absolute;
+  outline:0px solid;
+  border:0;
+  color:#fff;
+  padding:15px;
+  font-weight:900;
+  font-size:24px;
+}
+/*#lines::before{
+  content:'';
+  color:#fff;
+  height:6px;
+  width:30px;
+  background:#000;
+  border:0px solid;
+  position:absolute;
+  border-radius:10px;
+  top:-9px;
+  right:0px;
+}
+#lines::after{
+  content:'';
+  height:6px;
+  width:30px;
+  background:#000;
+  border:none;
+  position:absolute;
+  border-radius:10px;
+  top:9px;
+  outline:0;
+  right:0px;
+}*/
+ button{
+  color:#fff;
+  background:#333;
+  padding:10px;
+  border:1px;
+ }
+</style>
+<button onclick="but()">
+Click
+</button>
+<div id="lines" >
+change
+</div>
+
+
+</body>
+</html>

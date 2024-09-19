@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+<div class="container">
+<div id="divv">
+Set By your own
+</div>
+</div>
+<input type="range" id="range" min="0" max="200" step="1" value="10" oninput="fun()">
+<input type="range" id="range1" min="0" max="300" step="1" value="280" oninput="fun()">
+<input type="range" id="range2" min="0" max="300" step="1" value="280" oninput="fun()">
+
+
+<!--<input type="text" id="rang" min="0" max="100" value="0" oninput="fun()">
+<input type="button" onclick="fun()" value="get">-->
+<script> 
+var range = document.getElementById('range');
+var range1 = document.getElementById('range1');
+var range2 = document.getElementById('range2');
+var box = document.getElementById('divv');
+
+function fun(){
+var value = range.value;
+var value1 = range1.value;
+var value2 = range2.value;
+box.style.borderRadius = value + "px";
+box.style.height = value1 + "px";
+box.style.width = value2 + "px";
+
+box.innerHTML ="border-radius:" + value + "px;" +
+"<br /> height:" + value1 + "px;" + 
+"<br /> width:" + value2 + "px;"; 
+
+}
+</script>
+
+<script>
+/*var x=0;
+function fun()
+{
+x++;
+document.getElementById("divv").style.borderRadius = x + "px";
+document.getElementById("divv").style.backgroundColor = "red";
+
+/*if(x=1){
+x++;
+document.getElementById("divv").style.borderRadius = "15px";
+document.getElementById("divv").style.backgroundColor = "red";
+}
+/*if(x=3){
+x++;
+document.getElementById("divv").style.borderRadius = "35px";
+}*/
+
+/*if(x>=100){
+  x=70;
+}
+
+/*function  fun2()
+{
+  document.getElementById("display").value;
+
+}
+}
+//setInterval(fun,40);
+
+*/
+</script>
+
+
+<style>
+.container{
+  height:350px;
+  width:300px;
+  
+}
+div#divv{
+  margin:0px auto;
+  height:300px;
+  width:300px;
+  border:1px solid black;
+  border-radius:10px;
+  background:blue;
+  background-origin:center;
+  /*outline:1px solid;*/
+  padding:0px;
+  padding-top:0px;
+  text-align:center;
+  color:#000;
+  line-height:30px;
+  font-size:20px;
+  font-weight:900;
+  text-shadow:0px 0px 5px white;
+}
+input[type="range"]{
+  width:300px;
+  height:30px;
+}
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form by M Afzal</title>
+</head>
+<body>
+
+
+<style>
+body{
+  background:white;
+  display:;width:300px;
+  margin:10px auto;
+}
+.basic{
+  border:.00px solid #eee;
+  margin:1px;width:auto;
+  text-align:center;
+  color:white;
+  
+}
+form{
+  text-align:center;
+}
+input[type]{
+  box-shadow:0 0 1px black;
+  border-radius:10px;
+  margin:5px; padding:15px;
+  background:none;font-weight:900;
+  color:white;
+  border:.1px solid white;
+  transition:.1s;
+  border-bottom:2px solid white;
+  border-top:2px solid white;
+  width:0px;
+  /*opacity:border 0;*/
+}
+input[type]:focus{
+  background:none;
+  border-bottom:2px solid white;
+  border-top:0px solid white;
+  padding:14.6px;border-radius:0px;
+}
+input[placeholder]{
+  color:;font-size:16px;
+  font-weight:300;
+  text-shadow:0 .8px 0px black;
+  
+}
+form p{
+  font-weight:900;
+  color:white;
+  font-size:21px;
+  text-shadow: .8px .8px 2px black;
+}
+input[type="text"]{
+  box-shadow:0 0 1px white;
+  margin:0px auto;color:white;
+  border:0px solid;
+  width:220px;
+}
+input[type="email"]{
+  box-shadow:0 0 1px white;
+  margin:0px auto;color:white;
+  border:0px dotted red;
+   width:220px;
+}
+input[type="password"]{
+  box-shadow:0 0 1px white;
+  margin:0px auto;color:white;
+  border:0px dotted red;
+   width:220px;
+}
+input[type="radio"]{
+  box-shadow:inset 0 0 0px black;
+  margin:10px;
+  padding:15px;
+  width:18px;
+  filter:saturate(500%);
+}
+input[type="radio"] + span{
+  border:.1px solid white;
+  padding:5px;
+  background:#052955;
+}
+
+
+ input[type="checkbox"]{
+  width:19px;
+  box-shadow:inset 0 0 0px white;
+  filter:saturate(500%);
+}
+input[type="checkbox"] + span{
+  padding:5px;margin:12px;
+  background:#052955;
+  border:.1px solid;
+ 
+}
+input[type="submit"]{
+  width:120px;
+}
+input[type="reset"]{
+  width:120px;
+}
+ 
+select{
+  background:none;
+  padding:13px;
+  border:.1px solid white;
+  color:white;
+  border-radius:5px;
+  padding:15px;
+}
+hr{
+  height:0px;
+  border:.0px solid;
+}
+</style>
+
+
+
+
+<div style="border:2px groove black;border-radius:30px;background:#500054;padding:10px;color:white;box-shadow:inset 0px -0px 20px black,1px 1px 0px black;" id="js">
+<br><br>
+<div style="font-size:22px;padding:10px;background:;box-shadow:.1px 2px 0px white;padding:8px;text-shadow:2px 1px 0px black;" id="js"><strong>JavaScript Uses : Forms</strong></div>
+<br><br>
+<script>
+
+
+
+</script>
+
+
+
+<form name="iform">
+<div class="basic">
+
+<p>First Name : </p>
+<input type="text"  placeholder="Enter Your First Name">
+
+<hr>
+<p>Last Name : </p>
+<input type="text" placeholder="Enter Your Last Name">
+
+<hr>
+<p>Enter Email : </p>
+<input type="email" placeholder="Enter Your Mail">
+<hr>
+
+<p>Password : </p>
+ <input type="password" placeholder="Enter Your Password">
+<br>
+<br>
+</div>
+<br>
+<hr>
+
+<p style="">Gender : </p>
+
+<input type="Radio" name="gender" value="male  ">  <span> Male </span>
+<input type="radio" name="gender" value="female">  <span> Female </span>
+
+<br><br>
+<hr>
+
+<p style="">What is Your Favourite game...???</p>
+<input disabled="disabled" checked type="Checkbox" name="cricket"><span>Cricket</span>
+ <br><br>
+<input type="Checkbox" name="hockey"><span>Hockey</span>
+<br><br>
+<input type="Checkbox" name="football"><span>Football</span>
+
+<br>
+<br>
+<hr>
+<p style="">What is Your Country...???</p>
+<select>
+<option value="pak" name="pak">Pakistan</option>
+<option value="afg" name="afg">Afghanistan</option>
+<option value="eng" name="eng">England</option>
+
+<hr>
+</select>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<input type="reset"  name="reset">
+<input type="submit" name="submit">
+
+
+<br>
+<br>
+<br>
+
+
+
+</form>
+</div>
+
+</body>

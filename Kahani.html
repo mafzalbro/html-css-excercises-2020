@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+<style>
+.container{
+  background:pink;
+  height:1200px;
+  padding-top:60px;
+}
+.box{
+  color:red;
+  height:100px;
+  background:#333;
+  z-index:1;
+  transform:scale(1);
+}
+.box2{
+  background:red;
+  height:100px;
+  transform:scale(1);
+}
+
+.box:hover{
+  transform:scale(10);
+  opacity:.1;
+}
+.box2:hover{
+  transform:scale(0.1);
+  opacity:1;
+}
+/*.container:hover .box{
+  filter:blur(10px);
+  transform:scale(1.5);
+}*/
+</style>
+<div class="container">
+ <div class="box">
+
+</div>
+<div class="box2">
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body id="body">
+<script>
+  function dark(){
+  document.getElementById('body').style.backgroundColor="#333";
+  document.getElementById('btn1').style.color="#fff";
+  document.getElementById('btn2').style.color="#fff";
+  document.getElementById('btn1').style.backgroundColor="#333";
+  document.getElementById('btn2').style.backgroundColor="#333";
+
+}
+  function day(){
+  document.getElementById('body').style.backgroundColor="#eee";
+  document.getElementById('btn1').style.color="black";
+  document.getElementById('btn2').style.color="black";
+  document.getElementById('btn1').style.backgroundColor="#fff";
+  document.getElementById('btn2').style.backgroundColor="#fff";
+
+}
+</script>
+<style>
+body{
+  background:#ddd000;
+}
+div span{
+  border:0.1px solid green;
+  border-bottom:5px solid green;
+  border-top:2px solid green;
+  font-weight:500;
+  font-size:20px;
+  color:black;
+  background:#eee;
+  padding:8px;
+}
+div{
+  margin-top:50px;
+  text-align:center;
+  border:0px solid;
+  background:black;
+}
+button{
+  border:0.1px solid;
+  color:#fff;
+  outline:0;
+  padding:8px;
+  margin:9px;
+  border-radius:100px 0 0 100px;
+  background:#333;
+  border-right:5px solid;
+}
+</style>
+<button onclick="dark()" id="btn1">
+<span>Dark Mode</span>
+</button>
+<button onclick="day()" id="btn2">
+<span>Day Mode</span>
+</button>
+<div>
+<span>This is my Div</span>
+</div>
+</body>
+</html>

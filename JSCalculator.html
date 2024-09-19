@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+
+<style>
+.Cbag{
+  background:#dd5555;
+  height:220px;width:180px;margin:;
+  color:white;margin-top:100px;
+  position:relative;padding:0px;
+  left:20%;top:10%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transform:scale(1.6);
+  border:3px groove black;
+}
+/*table.tab{
+  border:1px solid red;background:red;
+  color:white;height:;width:;
+}*/
+ input[type="button"] {
+  color:white;
+  height:30px;
+  width:37px;
+  border:.1px solid;
+  background-color:black;
+  outline:0.1px solid black;
+  border-radius:3px;
+}
+ input[type="text"] {
+  color:white;
+  height:30px;
+  width:160px;
+  border:.1px solid;
+  background-color:black;
+  outline:0.1px solid black;
+  border-radius:2px;
+}
+input[type="button"]:active{
+  transform:scale(0.9);
+  
+}
+</style>
+
+<form name="cform">
+
+<div class="Cbag">
+
+<table border="0" class="tab">
+
+<tr>
+<td rowspan="1" colspan="4">
+<input type="text" name="display">
+</td>
+</tr>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+<tr>
+<td><input type="button" value="1" onclick="cform.display.value += 1"></td>
+<td><input type="button" value="2" onclick="cform.display.value += 2"></td>
+<td><input type="button" value="3" onclick="cform.display.value += 3"></td>
+<td><input type="button" value="+" onclick="cform.display.value += '+'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="4" onclick="cform.display.value += 4"></td>
+<td><input type="button" value="5" onclick="cform.display.value += 5"></td>
+<td><input type="button" value="6" onclick="cform.display.value += 6"></td>
+<td><input type="button" value="-" onclick="cform.display.value += '-'"></td>
+</tr>
+
+
+<tr>
+<td><input type="button" value="7" onclick="cform.display.value += 7"></td>
+<td><input type="button" value="8" onclick="cform.display.value += 8"></td>
+<td><input type="button" value="9" onclick="cform.display.value += 9"></td>
+<td><input type="button" value="x" onclick="cform.display.value += '*'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="C" onclick="cform.display.value = '' "></td>
+<td><input type="button" value="0" onclick="cform.display.value += 0"></td>
+<td><input type="button" value="=" onclick="cform.display.value = eval(cform.display.value)"></td>
+<td><input type="button" value="÷" onclick="cform.display.value += '/'"></td>
+</tr>
+
+</div>
+
+</table>
+
+</body>
+</html>
