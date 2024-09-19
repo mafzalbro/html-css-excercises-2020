@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullets Design</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: poppins;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        p {
+            padding: 0px 10px;
+        }
+
+        .lists {
+            box-sizing: border-box;
+            color: #333;
+            width: 90%;
+            border: 1px solid #dc143c;
+            padding: 0px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .lists .lists-content{
+            padding: 10px;
+        }
+        .lists ul{
+            margin: 2px;
+        }
+        .lists p,b{    
+            font-weight: 600;
+            padding: 10px;
+            font-size: medium;
+        }
+        .lists h2,h3,h4{
+            font-size: 25px;
+            width: 100%;
+            margin: 0px;
+            box-sizing: border-box;
+            background: crimson;
+            color: #fff;
+            display: inline-block;
+            padding: 12px 15px;
+            font-weight: 300;
+        }
+
+        /*h2 heading design*/
+        h2.heading{
+            font-size: 25px;
+            width: 100%;
+            margin: 0px;
+            box-sizing: border-box;
+            background: crimson;
+            color: #fff;
+            display: inline-block;
+            padding: 12px 15px;
+            font-weight: 300;
+        }
+        /*for box*/
+        .boxed{
+            box-sizing: border-box;
+            color: #dc143d;
+            width: 90%;
+            border: 2px solid;
+            padding: 0px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 20px;
+            background: #dc143c10;
+            border-radius: 5px;
+        }
+        .card-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap ;
+        }
+        .card{
+            position: relative;
+            margin: 20px auto;
+            width: 300px;
+            box-sizing: border-box;
+            color: #dc143c;
+            background: #dc143c10;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .card img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .card .content{
+            padding: 10px;
+            margin: 0px;
+            
+        }
+        .card .content h2{
+            margin: 0px 0px;
+        }
+        .card .content .label{
+            color: #dc143c;
+            background: #dc143c20;
+            border: 1px solid;
+            border-radius: 50px;
+            padding: 0px 10px;
+            margin: 10px 0px;
+            display: inline-block;
+        }
+        .labelh{
+            font-weight: 700;
+        }
+        .card .content .details{
+            padding: 0px 4px 6px 4px;
+        }
+        
+        .card .overlay{
+            position: absolute;
+            z-index: 100;
+            top: -100px;
+            left: -50px;
+            transition: all 0.5s;
+        }
+    
+        .card:hover .overlay{
+            
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #dc143c;
+            padding: 2px 10px;
+            border-radius: 50px;
+            color: #fff;
+           }
+           .card:hover img{filter: brightness(50%);}
+           .card-header{
+            text-align: center;
+            background-color: #dc143c;
+           }
+    </style>
+    <div ><h2 class="heading">Card with overlay effect. Go Down for lists design.</h2></div>
+<div class="card-container">
+    
+    <div class="card">
+        <div class="overlay">overlay</div>
+        <img src="images/img10.jpg" alt="img"/>
+        <div class="content">
+            <h2>How you are doing?</h2>
+            <div class="labels"> <span class="labelh"> Labels:</span> <div class="label">How to</div></div>
+            <div class="details">I am doing very great business with people to get together.</div   >
+        </div>
+    </div>
+    <div class="card">
+        <div class="overlay">overlay</div>
+        <img src="images/img10.jpg" alt="img">
+        <div class="content">
+            <h2>How you are doing?</h2>
+            <div class="labels"> <span class="labelh"> Labels:</span> <div class="label">How to</div></div>
+            <div class="details">I am doing very great business with people to get together.</div   >
+        </div>
+    </div>
+    <div class="card">
+        <div class="overlay">overlay</div>
+        <img src="images/img10.jpg" alt="img">
+        <div class="content">
+            <h2>How you are doing?</h2>
+            <div class="labels"> <span class="labelh"> Labels:</span> <div class="label">How to</div></div>
+            <div class="details">I am doing very great business with people to get together.</div   >
+        </div>
+    </div>
+    <div class="card">
+        <div class="overlay">overlay</div>
+        <img src="images/img10.jpg" alt="img">
+        <div class="content">
+            <h2>How you are doing?</h2>
+            <div class="labels"> <span class="labelh"> Labels:</span> <div class="label">How to</div></div>
+            <div class="details">I am doing very great business with people to get together.</div   >
+        </div>
+    </div>
+    <div class="card">
+        <div class="overlay">overlay</div>
+        <img src="images/img10.jpg" alt="img">
+        <div class="content">
+            <h2>How you are doing?</h2>
+            <div class="labels"> <span class="labelh"> Labels:</span> <div class="label">How to</div></div>
+            <div class="details">I am doing very great business with people to get together.</div   >
+        </div>
+    </div>
+    <div class="card">
+        <div class="overlay">overlay</div>
+        <img src="images/img10.jpg" alt="img">
+        <div class="content">
+            <h2>How you are doing?</h2>
+            <div class="labels"> <span class="labelh"> Labels:</span> <div class="label">How to</div></div>
+            <div class="details">I am doing very great business with people to get together.</div   >
+        </div>
+    </div>
+    <div class="card">
+        <div class="overlay">overlay</div>
+        <img src="images/img10.jpg" alt="img">
+        <div class="content">
+            <h2>How you are doing?</h2>
+            <div class="labels"> <span class="labelh"> Labels:</span> <div class="label">How to</div></div>
+            <div class="details">I am doing very great business with people to get together.</div   >
+        </div>
+    </div>
+    <div class="card">
+        <div class="overlay">overlay</div>
+        <img src="images/img10.jpg" alt="img">
+        <div class="content">
+            <h2>How you are doing?</h2>
+            <div class="labels"> <span class="labelh"> Labels:</span> <div class="label">How to</div></div>
+            <div class="details">I am doing very great business with people to get together.</div   >
+        </div>
+    </div>
+</div>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+    ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+</p>
+<h2 class="heading">
+    This the heading of best woodings.How are you for long heading.
+</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+    ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p>
+    <div class="lists">
+        <h3>Computer Science is the basic part of our Life.</h3>
+        <div class="lists-content">
+        <p>The following is lists given below...</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet. Computer Science Degree.</li>
+            <li>Computer Science Problems.</li>
+            <li>Computer Science Fields.</li>
+            <li>Computer Science Jobs.</li>
+        </ul>
+        <ol>
+            <li>Computer Science Degree.</li>
+            <li>Computer Science Problems.</li>
+            <li>Computer Science Fields.</li>
+            <li>Computer Science Jobs.</li>
+        </ol>
+    </div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p><p class="boxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p>
+    <div class="lists">
+        <h3>Computer Science</h3>
+        <div class="lists-content">
+        <p>The following is lists given below...</p>
+        <ul>
+            <li> Computer Science Degree.</li>
+            <li>Computer Science Problems.</li>
+            <li>Computer Science Fields.</li>
+            <li>Computer Science Jobs.</li>
+        </ul>
+        <ol>
+            <li>Computer Science Degree.</li>
+            <li>Computer Science Problems.</li>
+            <li>Computer Science Fields.</li>
+            <li>Computer Science Jobs.</li>
+        </ol>
+    </div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolor alias eos facilis nobis nulla libero
+        ullam a dolorem eum nisi, repellendus nesciunt. Consequatur beatae quasi voluptatum exercitationem eos labore?
+    </p>
+
+</body>
+
+</html>

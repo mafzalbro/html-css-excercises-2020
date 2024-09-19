@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards for permotion</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: poppins;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        .main-card {
+            width: 80vw;
+            border: 1px solid crimson;
+            margin: 30px auto;
+            overflow: hidden;
+            height: 220px;
+            box-shadow: 2px 3px 20px -5px rgb(172, 172, 172);
+            border-radius: 20px;
+            position: relative;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .main-card:hover {
+            border: 1px solid #333;
+            box-shadow: 2px 3px 30px -5px rgb(129, 207, 218);
+        }
+        .main-card a{
+            display: flex;
+            flex-direction: row;
+            color: black;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .main-card .img {
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .main-card img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .main-card:hover img {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+        .main-card .text-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-card p {
+            padding: 0 10px;
+            font-size: 13px;
+            margin: 0px 10px 36px;
+            line-height: 1.4;
+        }
+
+        .main-card h3 {
+            padding: 0px 10px;
+            margin: 12px 10px;
+            line-height: 1.4;
+        }
+
+        .main-card button {
+            background: rgb(161, 236, 255);
+            background: crimson;
+            color: white;
+            outline: none;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            transition: all 0.4s;
+        }
+
+        .main-card:hover button {
+            background-color: #333;
+            box-shadow: 0px 0px 20px 2px #ccc;
+        }
+
+        @media screen and (max-width:700px) {
+            .main-card{
+                height: 450px;
+            }
+            .main-card a{
+                flex-direction: column;
+            }
+            .main-card .img {
+            width: 100%;
+            }
+            .main-card img{
+                width: 100%;
+                height: 220px;
+            }
+            .main-card .text-body{
+                height: 200px;
+            }
+
+        }
+    </style>
+    <h1>cards for Websites</h1>
+    <p>what is the difference between the websites and webpages</p>
+
+    <div class="main-card">
+        <a href="/m.html">
+            <div class="img">
+                <img src="images/img1.jpg" alt="cardd images" title="card images">
+            </div>
+            <div class="text-body">
+                <h3>
+                    The border titles to grow the web to show the beauty of web.
+                </h3>
+                <p>what is the main problem you have and the main tension and the issue in you which you have.</p>
+            </div> 
+            <a href="file:///D:/()All%20My%20Codings/m.html" target="_blank">
+                <button>
+                    Learn More &nearr;&nearr;
+                </button>
+            </a>
+    </div>
+</body>
+
+</html>

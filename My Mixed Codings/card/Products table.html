@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: arial;font-weight: 100;
+        }
+
+        table.products {
+            border-collapse: collapse;
+            min-width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            border: 1px solid #ccc;
+            margin:50px auto;
+        }
+        table.products::before{
+            content: 'Special';
+            padding: 2px 15px;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: crimson;
+            color: #fff;
+        }
+        .products tr{
+            border-bottom: 1px solid #ccc;
+
+        }
+        .products td {
+            padding: 5px;
+        }
+
+        .products td img {
+            width: 250px;
+        }
+
+        .products td h3 {
+            margin: 5px 0px;
+
+        }
+
+        .products td p,b {
+            font-size: 12px;
+            padding: 0px 2px;
+            margin: 8px 0px;
+            font-weight: 100;
+        }
+
+        .products td button {
+            outline: none;
+            border: none;
+            background: crimson;
+            color: #fff;
+            padding: 2px 15px;
+            margin: 2px;
+            border-radius: 100px;
+        }
+
+        .products td button a {
+            color: #fff;
+            text-decoration: none;
+            
+        }
+        .products td button:hover{
+            background: #333;
+        }
+        @media screen and (max-width:700px) {
+            .products td img {
+                width: 120px;
+            }
+        }
+    </style>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, impedit. Odit ut maiores voluptate tempora impedit laudantium ex quod quaerat obcaecati labore eius itaque fugiat quo voluptatum in, nulla dolores fugit dolore id quasi ad possimus? Quasi culpa eum perspiciatis sed. Unde consequuntur quidem et sunt facere totam eum quaerat ducimus qui, dolor nemo quo voluptate illo aliquam debitis.</p><p> Fugiat delectus accusantium tenetur? Adipisci odit impedit corrupti delectus aperiam reprehenderit exercitationem iure ullam optio incidunt? Sint magni ex laboriosam ipsum perferendis voluptatibus deleniti tempore est! Quia, deserunt odit. Ipsam repellat aliquid quo, cumque atque nam! Nostrum quos corporis quasi aspernatur.</p>
+    <table class="products">
+        <tr>
+            <td><img src="images/img4.jpg" alt=""></td>
+            <td>
+                <h3>Product Naming for the Long One...</h3>
+                <p>Enjoy the deal.</p>
+                <p>Price: 100.57$</p>
+                <button><a rel="nofollow" href="bullets designs.html" target="_blank"> See details &rarr;</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/img5.jpg" alt=""></td>
+            <td>
+                <h3>Product Naming</h3>
+                <p>Price: 89.87$, 100 Pieces</p>
+                <button><a rel="nofollow" href="bullets designs.html" target="_blank"> See details &rarr;</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/img7.jpg" alt=""></td>
+            <td>
+                <h3>Product Naming</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nihil molestias reprehenderit in animi
+                    necessitatibus, incidunt earum expedita cumque dolore!</p>
+                <button><a rel="nofollow" href="bullets designs.html" target="_blank"> See details &rarr;</a></button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

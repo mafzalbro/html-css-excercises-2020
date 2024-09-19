@@ -1,0 +1,157 @@
+﻿
+----------------------------------------------------------1st Step------------------------------------------------------------
+
+search -  <data:post.body/> choose THIRD one AND REPLACE THE  CODE
+
+-----------------------------
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<script type='text/javascript'>
+//<![CDATA[
+// Articles Related to Middle of Posts by Anutrickz
+var anutrickz = new Array(); var anutrickzNum = 0; var relatedUrls = new Array(); function related_results_labels(json) { for (var i = 0; i < json.feed.entry.length; i++) { var entry = json.feed.entry[i]; anutrickz[anutrickzNum] = entry.title.$t; for (var k = 0; k < entry.link.length; k++) { if (entry.link[k].rel == 'alternate') {relatedUrls[anutrickzNum] = entry.link[k].href; anutrickzNum++; break;}}}} function removeRelatedDuplicates() { var tmp = new Array(0); var tmp2 = new Array(0); for(var i = 0; i < relatedUrls.length; i++) { if(!contains(tmp, relatedUrls[i])) { tmp.length += 1; tmp[tmp.length - 1] = relatedUrls[i]; tmp2.length += 1; tmp2[tmp2.length - 1] = anutrickz[i];}} anutrickz = tmp2; relatedUrls = tmp;} function contains(a, e) { for(var j = 0; j < a.length; j++) if (a[j]==e) return true; return false;} function printRelatedLabels() { var r = Math.floor((anutrickz.length - 1) * Math.random()); var i = 0; document.write('<ul>'); while (i < anutrickz.length && i < 20) { document.write('<li><a href="' + relatedUrls[r] + '">' + anutrickz[r] + '</a></li>'); if (r < anutrickz.length - 1) { r++; } else { r = 0;} i++;} document.write('</ul>');}
+//]]>
+</script>
+</b:if>
+
+<div expr:id='&quot;post1&quot; + data:post.id'/>
+         <div class='anutrickz'>
+            <b:if cond='data:post.labels'>
+            <b:loop values='data:post.labels' var='label'>
+            <b:if cond='data:blog.pageType == &quot;item&quot;'>
+               <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels&amp;max-results=3&quot;' type='text/javascript'/>
+                  </b:if>
+                  </b:loop>
+                  </b:if>
+                  <h4>Also Read</h4>
+                  <script type='text/javascript'>
+                  removeRelatedDuplicates();
+                  printRelatedLabels();
+               </script>
+         </div>
+         <div expr:id='&quot;post2&quot; + data:post.id'><p><data:post.body/></p></div>
+         <script type='text/javascript'>
+            var obj0=document.getElementById(&quot;post1<data:post.id/>&quot;);
+            var obj1=document.getElementById(&quot;post2<data:post.id/>&quot;);
+            var s=obj1.innerHTML;
+            var t=s.substr(0,s.length/2);
+            var r=t.lastIndexOf(&quot;&lt;br&gt;&quot;);
+            if(r&gt;0) {obj0.innerHTML=s.substr(0,r);obj1.innerHTML=s.substr(r+4);}
+         </script>
+----------------------------------------------2rd Step-------------------------------------------------------------------
+PUT THIS CSS
+---------------------------------
+
+/*Articles Related to Middle of Posts*/
+.anutrickz{background:#FFF;position:relative;display:inline-block;border:2px solid #DDD;margin:22px 0}
+.anutrickz h4{background:#393939;font-family:Poppins,sans-serif;color:#fff;font-size:12px;font-weight:700;position:absolute;top:-21px;left:2.5%;padding:4px 18px;border:1px solid #DDD;border-radius:5px;text-transform:uppercase}
+.anutrickz h4:before{content: '\f043';right: 10px;bottom: 0;font-family:FontAwesome;font-style: normal;font-weight: 400;margin: 0 10px 0 0;color: #fff;}
+.anutrickz ul{padding:12px 41px 0;list-style:none}
+.anutrickz ul a:before{font-family:fontawesome;content:'\25b6';padding-right:10px}
+.anutrickz li{border-radius:5px;border-bottom:1px solid rgba(227,227,227,0.33);line-height:1.7em}
+.anutrickz li:hover {text-decoration: underline;}
+-----------------------------------------------------------------
+� ANUTRICKZ - SUBSCRIBE US FOR MORE UPDATES
+-----------------------------------------------------------------
+Top was related links and 
+
+
+
+Now Related Post 
+
+
+
+
+]]></b:skin>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<style type='text/css'>
+.related-postspace{position:relative;margin:0;padding:20px 0}.related-postspace h4{margin:0 0 15px 0;font-weight:700;font-size:18px;padding:0 0 20px 0;border-bottom:1px solid rgba(0,0,0,0.05);text-align:center}.related-post-simple-2,.related-post-simple-2 li{list-style:none;margin:0;padding:5px}.related-post-simple-2 li{overflow:hidden;margin:0 auto 10px auto;transition:all .3s}.related-post-simple-2 li:hover .related-post-item-title{color:#e74c3c}.related-post-simple-2 .related-post-item-thumbnail{border-radius: 2px; width: 120px; height: 80px; max-width: none; max-height: none; background-color: transparent; object-fit: cover; border: none; float: left; margin: 2px 15px 0 0; padding: 0; transition: box-shadow 0.3s ease 0s; -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); }}.related-post-simple-2 .related-post-item-title{color:#222;font-size:16px;font-weight:700}.related-post-simple-2 .related-post-item-title:hover{color:#e74c3c}.related-post-simple-2 .related-post-item-summary{display:block;font-size:13px;margin:5px auto 0 auto;color:#999}.related-post-simple-2 .related-post-item-summary .related-post-item-more{display:none}
+@media screen and (max-width:750px){
+.related-post-simple-2 li{width:100%;float:none}
+.related-post-simple-2,.related-post-simple-2 li{padding:5px 0}
+.related-post-simple-2 .related-post-item-summary{display:none}}  
+</style>  
+</b:if>
+
+
+
+<data:post.body/>
+
+
+
+<data:post.body/>
+<div class='related-postspace' id='dtostrelated-post'/>
+         <div class='clear'/>
+            <script type='text/javascript'>
+               var labelArray = [<b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'>
+                         &quot;<data:label.name/>&quot;<b:if cond='data:label.isLast != &quot;true&quot;'>,</b:if>
+                     </b:loop></b:if>];
+               var relatedPostConfig = {
+                     homePage: &quot;<data:blog.homepageUrl/>&quot;,
+                     widgetTitle: &quot;&lt;h4&gt;Related Posts&lt;/h4&gt;&quot;,
+                     numPosts: 5,
+                     summaryLength: 160,
+                     titleLength: &quot;auto&quot;,
+                     thumbnailSizew: 120,
+                     thumbnailSizeh: 80,
+                     noImage: &quot;https://1.bp.blogspot.com/-TYUXVFAubkI/Xbea3ZEurfI/AAAAAAAAAIE/AVniCax-0-4xpnPcYwWVrw9DlrHgeRucACLcBGAsYHQ/s1600/noimage1.png&quot;,
+                     containerId: &quot;dtostrelated-post&quot;,
+                     newTabLink: false,
+                     moreText: &quot;Read More&quot;,
+                     widgetStyle: 2,
+                     callBack: function() {}
+               };
+            </script>
+            <script type='text/javascript'>
+               //<![CDATA[
+               /*! Related Post Widget */
+               var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>Recommended</h4>",widgetStyle:1,homePage:"https://blogger.com",numPosts:7,summaryLength:370,titleLength:"auto",thumbnailSizew:150,thumbnailSizeh:100,noImage:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAA3NCSVQICAjb4U/gAAAADElEQVQImWOor68HAAL+AX7vOF2TAAAAAElFTkSuQmCC",containerId:"related-post",newTabLink:false,moreText:"Baca Selengkapnya",callBack:function(){}};for(var f in relatedPostConfig){d[f]=(relatedPostConfig[f]=="undefined")?d[f]:relatedPostConfig[f]}var j=function(a){var b=m.createElement("script");b.type="text/javascript";b.src=a;k.appendChild(b)},o=function(b,a){return Math.floor(Math.random()*(a-b+1))+b},l=function(a){var p=a.length,c,b;if(p===0){return false}while(--p){c=Math.floor(Math.random()*(p+1));b=a[p];a[p]=a[c];a[c]=b}return a},e=(typeof labelArray=="object"&&labelArray.length>0)?"/-/"+l(labelArray)[0]:"",h=function(b){var c=b.feed.openSearch$totalResults.$t-d.numPosts,a=o(1,(c>0?c:1));j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&start-index="+a+"&max-results="+d.numPosts+"&callback=showRelatedPost")},g=function(z){var s=document.getElementById(d.containerId),x=l(z.feed.entry),A=d.widgetStyle,c=d.widgetTitle+'<ul class="related-post-simple-'+A+'">',b=d.newTabLink?' target="_blank"':"",y='<span style="display:block;clear:both;"></span>',v,t,w,r,u;if(!s){return}for(var q=0;q<d.numPosts;q++){if(q==x.length){break}t=x[q].title.$t;w=(d.titleLength!=="auto"&&d.titleLength<t.length)?t.substring(0,d.titleLength)+"&hellip;":t;r=("media$thumbnail" in x[q]&&d.thumbnailSizew!==false)?x[q].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/,"/s"+d.thumbnailSizew+"-c"):d.noImage;u=("summary" in x[q]&&d.summaryLength>0)?x[q].summary.$t.replace(/<br ?\/?>/g," ").replace(/<.*?>/g,"").replace(/[<>]/g,"").substring(0,d.summaryLength)+"&hellip;":"";for(var p=0,a=x[q].link.length;p<a;p++){v=(x[q].link[p].rel=="alternate")?x[q].link[p].href:"#"}if(A==2){c+='<li><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSizew+'" height="'+d.thumbnailSizeh+'"><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+">"+w+'</a><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+'</span> <a href="'+v+'" class="related-post-item-more"'+b+">"+d.moreText+"</a></span>"+y+"</li>"}else{if(A==3||A==4){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-title" href="'+v+'"'+b+'><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSizew+'" height="'+d.thumbnailSizeh+'"></a><div class="related-post-item-tooltip"><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+">"+w+"</a></div>"+y+"</li>"}else{if(A==5){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-wrapper" href="'+v+'" title="'+t+'"'+b+'><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSizew+'" height="'+d.thumbnailSizeh+'"><span class="related-post-item-tooltip">'+w+"</span></a>"+y+"</li>"}else{if(A==6){c+='<li><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+">"+w+'</a><div class="related-post-item-tooltip"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSizew+'" height="'+d.thumbnailSizeh+'"><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+"</span></span>"+y+"</div></li>"}else{c+='<li><a title="'+t+'" href="'+v+'"'+b+">"+w+"</a></li>"}}}}}s.innerHTML=c+="</ul>"+y;d.callBack()};randomRelatedIndex=h;showRelatedPost=g;j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&max-results=0&callback=randomRelatedIndex")})(window,document,document.getElementsByTagName("head")[0]);
+               //]]>
+            </script>
+
+
+
+_________
+
+
+
+
+
+
+For Premium style
+
+</head>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+
+]]></b:skin>
+
+
+
+.post-related { display: inline-block; background: #fff; padding: 10px; width:100%; } .post-box .heading { margin-bottom: 10px; text-align: center; margin-top: 10px; position: relative; } .post-box .heading:after { content: "" ; position: absolute; top: 100%; left: 50%; margin-left: -11px; width: 21px; height: 1px; margin-top: 2px; background: #b565a7; } .item-related { width: 31.6%; display: block; float: left; margin-right: 10px; height: 100%; } .item-related:last-child { margin: 0!important; } .item-related .link {display: block; margin: -1px; margin-bottom: 0;} .item-related img {margin-left:0px !important; display: block; opacity: 1; width: 100%; height: 200px; object-fit: cover; } .item-related h3 { font-weight: 400; font-size: 14px; line-height: 1.71429; font-family: Muli; text-transform: uppercase; } img.noops-smly { padding: 0 !important; margin-top: -2px !important; width: 19px; display: inline; }
+@media (max-width: 520px)
+.item-related {
+width: 100%!important;
+}
+
+
+<data:post.body/>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<script id='related-posts' type='text/javascript'> /*<![CDATA[*/ var relatedTitles = new Array(); var relatedTitlesNum = 0; var relatedUrls = new Array(); var thumburl = new Array(); function related_results_labels_thumbs(json) { for (var i = 0; i < json.feed.entry.length; i++) { var entry = json.feed.entry[i]; relatedTitles[relatedTitlesNum] = entry.title.$t; try {thumburl[relatedTitlesNum]=entry.media$thumbnail.url;} catch (error){ s=entry.content.$t;a=s.indexOf("<img");b=s.indexOf("src=\"",a);c=s.indexOf("\"",b+5);d=s.substr(b+5,c-b-5); if((a!=-1)&&(b!=-1)&&(c!=-1)&&(d!="")) {thumburl[relatedTitlesNum]=d;} else {if(typeof(defaultnoimage) !== 'undefined') thumburl[relatedTitlesNum]=defaultnoimage; else thumburl[relatedTitlesNum]="http://4.bp.blogspot.com/-ZoL4BRpPhkw/U6wnup4_6gI/AAAAAAAAACA/sKpM61pmJPo/s1600/no_pic_available.jpg";} } if(relatedTitles[relatedTitlesNum].length>35) relatedTitles[relatedTitlesNum]=relatedTitles[relatedTitlesNum].substring(0, 35)+"..."; for (var k = 0; k < entry.link.length; k++) { if (entry.link[k].rel == 'alternate') { relatedUrls[relatedTitlesNum] = entry.link[k].href; relatedTitlesNum++; } } } } function removeRelatedDuplicates_thumbs() { var tmp = new Array(0); var tmp2 = new Array(0); var tmp3 = new Array(0); for(var i = 0; i < relatedUrls.length; i++) { if(!contains_thumbs(tmp, relatedUrls[i])) { tmp.length += 1; tmp[tmp.length - 1] = relatedUrls[i]; tmp2.length += 1; tmp3.length += 1; tmp2[tmp2.length - 1] = relatedTitles[i]; tmp3[tmp3.length - 1] = thumburl[i]; } } relatedTitles = tmp2; relatedUrls = tmp; thumburl=tmp3; } function contains_thumbs(a, e) { for(var j = 0; j < a.length; j++) if (a[j]==e) return true; return false; } function printRelatedLabels_thumbs(current) { for(var i = 0; i < relatedUrls.length; i++) { if((relatedUrls[i]==current)||(!relatedTitles[i])) { relatedUrls.splice(i,1); relatedTitles.splice(i,1); thumburl.splice(i,1); i--; } } var r = Math.floor((relatedTitles.length - 1) * Math.random()); var i = 0; while (i < relatedTitles.length && i < 20 && i<maxresults) { tmb = thumburl[r].replace('s72-c/','s300-c/'); document.write('<div class="item-related"><a href="' + relatedUrls[r] + '" class="link"><img width="150" height="100" src="'+tmb+'"/></a><h3><a href="' + relatedUrls[r] + '">'+relatedTitles[r]+'</a></h3></div>');i++; if (r < relatedTitles.length - 1) { r++; } else { r = 0; } } relatedUrls.splice(0,relatedUrls.length); thumburl.splice(0,thumburl.length); relatedTitles.splice(0,relatedTitles.length); } function removeHtmlTag(strx, chop) { var s = strx.split("<"); for (var i = 0; i < s.length; i++) { if (s[i].indexOf(">") != -1) { s[i] = s[i].substring(s[i].indexOf(">") + 1, s[i].length) } } s = s.join(""); s = s.substring(0, chop - 1); return s } /*]]>*/ </script>
+                  <div class='post-related'>
+                    <div class='post-box'>
+                      <h4 class='heading common-heading'> <i class="fa fa-th-list" aria-hidden="true"></i> Related Posts</h4>
+                    </div>
+                    <b:loop values='data:post.labels' var='label'>
+                      <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels_thumbs&amp;max-results=6&quot;' type='text/javascript'/>                             
+                    </b:loop> 
+                    <script type='text/javascript'>
+                      var defaultnoimage=&quot;http://1.bp.blogspot.com/_u4gySN2ZgqE/SosvnavWq0I/AAAAAAAAArk/yL95WlyTqr0/s400/noimage.png&quot;;
+                      var maxresults=5; // Number Of Posts
+                      removeRelatedDuplicates_thumbs();
+                      printRelatedLabels_thumbs(&quot;<data:post.url/>&quot;);
+                    </script>
+                  </div>    
+</b:if>

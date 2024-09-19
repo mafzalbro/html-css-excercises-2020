@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Afzal Video Element</title>
+</head>
+<body>
+<style>
+body{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+ }
+.section{
+  position:relative;
+  height:70vh;
+  background-image:url(../Download/video.mp4), linear-gradient(180deg,#333,#000);
+  overflow:hidden;
+ }
+.box{
+  position:absolute;
+  top:-100px;
+  left:-100px;
+  height:100vh;
+  width:70vw;
+  transform:rotate(30deg);
+  border:0px solid;
+  background:blue;
+  opacity:0.4;
+ }
+.vid{
+  position:absolute;
+ }
+video{
+  width:100%;
+  height:70vh;
+  object-fit:cover;
+  background:#000;
+  opacity:01;
+  display:block;
+  padding:0;
+  transition:1s ease;
+ }
+.section:hover video{
+  opacity:0.2;
+ }
+div.txt{
+  position:absolute;
+  top:0px;
+  color:#fff;
+  padding:50px 30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  opacity:0;
+  transition:0.7s ease;
+ }
+.section:hover .txt{
+  top:110px;
+  opacity:1;
+ }
+.txt h2{
+  font-weight:900;
+  text-transform:uppercase;
+  margin:0px;
+ }
+.txt p{
+  font-weight:300;
+  font-size:14px;
+ }
+.text{
+  padding:20px;
+ }
+</style>
+
+<div class="text">
+<h2>Afzal is Web Developer</h2>
+<p>The web development in this world is very easy than exists in other words.</p>
+</div>
+
+
+<div class="section">
+<div class="box"> </div>
+<div class="vid">
+
+<video muted autoplay loop poster="/Download/images-9.jpg">
+
+<source src="/Download/video.mp4" type="video/mp4">
+
+</video>
+</div>
+
+<div class="txt">
+<h2>Afzal is Web Developer</h2>
+<p>The web development in this world is very easy than exists in other words. Who Cover All the Topics in the world you have to understand the nature of working of Websites</p>
+</div>
+
+</div>
+
+
+<div class="text">
+<h1>Afzal is Web Developer</h1>
+<p>The web development in this world is very easy than exists in other words. Who Cover All the Topics in the world you have to understand the nature of working of Websites</p>
+</div>
+
+<div class="text">
+<h1>Afzal is Web Developer</h1>
+<p>The web development in this world is very easy than exists in other words. Who Cover All the Topics in the world you have to understand the nature of working of Websites</p>
+</div>
+
+<div class="text">
+<h1>Afzal is Web Developer</h1>
+<p>The web development in this world is very than exists in other worlds. o Cover All the Topics in the world you have to understand the nature of working of Websites</p>
+</div>
+
+<div class="text">
+<h1>Afzal is Web Developer</h1>
+<p>The web development in this world is very than exists in other worlds. o Cover All the Topics in the world you have to understand the nature of working of Websites</p>
+</div>
+
+</body>
+</html> 
