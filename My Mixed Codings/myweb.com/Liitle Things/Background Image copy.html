@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Header</title>
+</head>
+<style>
+*,html{box-sizing:border-box;}
+body{
+  font-family: poppins;
+  padding: 0;
+  margin: 80px 5vw;
+  background-image: url(img10.jpg),linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+  height: 120vh;
+  background-position:center;
+  background-attachment: fixed;
+  background-size:cover;
+  background-blend-mode: lighten;
+  overflow-x: hidden;
+ }
+header{
+  padding: 0;
+  margin: 0;
+ }
+section{
+  margin:0px;
+ }
+.menu ul{
+   float:center;
+   list-style:none;
+ }
+.menu ul li{
+  display:inline-block;
+ }
+.menu ul li a{
+  text-decoration:none;
+  border:1px solid;
+  padding:5px 15px;
+  margin:2px;
+  background:none;
+  color:#fff;
+ }
+.menu ul li a:hover{
+  background:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  border:1px solid;
+ }
+img{
+  width:100%;
+  height:auto;
+  opacity:0.7;
+ }
+ .heading{
+   color:#fff;
+   width: 70%;
+   margin: 0 auto;
+   padding: 10vh 0vw;
+   text-align: center;
+   font-size: 2.8rem;
+   line-height: normal;
+   font-family: poppins, Geneva, Tahoma, sans-serif;
+ }
+ .para{
+   color: #fff;
+ }
+ .para p{
+   line-height: 1.3;
+   padding: 30px;
+   margin: 20px;
+ }
+ .para p::first-line{
+   background: red;
+ }
+ .para p::first-letter{
+   font-size: 40px;
+   font-weight: 700;
+   margin: 5px;
+ }
+ .para p:nth-of-type(2n-1){
+   background: red;
+ }
+ .pentagone{
+   width: 94px;
+   /* height: 163px; */
+   height: 300px;
+   background: red;
+   position: fixed;
+   margin: 30px;
+   border-radius: 50%;
+   transform: scale(.4);
+   z-index: -1000;
+   animation: snowing 5s infinite linear;
+ }
+ @keyframes snowing{
+   0%{
+     top: 0px;
+     opacity: 0;
+     transform: scale(6);
+   }
+ 50%{
+  opacity: 0.8;
+  transform: scale(6) rotate(180deg);
+ }
+ 100%{
+     top: 0vh;
+     opacity: 0;
+     transform: scale(6) rotate(360deg);
+   }
+  }
+ .pentagone::before{
+   content: '';
+   background: blue;
+   position: absolute;
+   top: 0;
+   height: inherit;
+   width: inherit;
+   border-radius: inherit;
+   transform: rotate(60deg);
+ }
+ .pentagone::after{
+   content: '';
+   background: green;
+   position: absolute;
+   top: 0;
+   height: inherit;
+   width: inherit;
+   border-radius: inherit;
+   transform: rotate(-60deg);
+ }
+</style>
+<body>
+  <div class="pentagone">
+
+  </div>
+<header>
+  
+<section class="menu">
+<ul>
+<li><a href="#">Afzal</a></li>
+<li><a href="#">Afzal 1</a></li>
+<li><a href="#">Afzal 2</a></li>
+</ul>
+</section>
+</header>
+
+<h1 class="heading">Journey Towards Your own Goals</h1>
+<div class="para">
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dolore labore pariatur enim, aliquam iure officiis est laboriosam sequi voluptatum esse, culpa animi ad nobis nam assumenda quos illo voluptatem! Voluptatem sit laborum impedit, aspernatur pariatur officiis. Possimus magni velit dolore modi omnis, aspernatur praesentium consequatur. Nihil aliquam soluta accusamus architecto deserunt unde nobis at dolore iure fugit rem eos, deleniti ipsa praesentium commodi ducimus magni odit nemo possimus tenetur consequuntur? Aspernatur consectetur laboriosam, tempora exercitationem nesciunt doloribus aliquam facilis ullam saepe quidem quibusdam libero! Nemo minus dolorum explicabo at accusantium. Incidunt fuga reprehenderit pariatur possimus cumque sapiente facere commodi.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dolore labore pariatur enim, aliquam iure officiis est laboriosam sequi voluptatum esse, culpa animi ad nobis nam assumenda quos illo voluptatem! Voluptatem sit laborum impedit, aspernatur pariatur officiis. Possimus magni velit dolore modi omnis, aspernatur praesentium consequatur. Nihil aliquam soluta accusamus architecto deserunt unde nobis at dolore iure fugit rem eos, deleniti ipsa praesentium commodi ducimus magni odit nemo possimus tenetur consequuntur? Aspernatur consectetur laboriosam, tempora exercitationem nesciunt doloribus aliquam facilis ullam saepe quidem quibusdam libero! Nemo minus dolorum explicabo at accusantium. Incidunt fuga reprehenderit pariatur possimus cumque sapiente facere commodi.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dolore labore pariatur enim, aliquam iure officiis est laboriosam sequi voluptatum esse, culpa animi ad nobis nam assumenda quos illo voluptatem! Voluptatem sit laborum impedit, aspernatur pariatur officiis. Possimus magni velit dolore modi omnis, aspernatur praesentium consequatur. Nihil aliquam soluta accusamus architecto deserunt unde nobis at dolore iure fugit rem eos, deleniti ipsa praesentium commodi ducimus magni odit nemo possimus tenetur consequuntur? Aspernatur consectetur laboriosam, tempora exercitationem nesciunt doloribus aliquam facilis ullam saepe quidem quibusdam libero! Nemo minus dolorum explicabo at accusantium. Incidunt fuga reprehenderit pariatur possimus cumque sapiente facere commodi.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dolore labore pariatur enim, aliquam iure officiis est laboriosam sequi voluptatum esse, culpa animi ad nobis nam assumenda quos illo voluptatem! Voluptatem sit laborum impedit, aspernatur pariatur officiis. Possimus magni velit dolore modi omnis, aspernatur praesentium consequatur. Nihil aliquam soluta accusamus architecto deserunt unde nobis at dolore iure fugit rem eos, deleniti ipsa praesentium commodi ducimus magni odit nemo possimus tenetur consequuntur? Aspernatur consectetur laboriosam, tempora exercitationem nesciunt doloribus aliquam facilis ullam saepe quidem quibusdam libero! Nemo minus dolorum explicabo at accusantium. Incidunt fuga reprehenderit pariatur possimus cumque sapiente facere commodi.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dolore labore pariatur enim, aliquam iure officiis est laboriosam sequi voluptatum esse, culpa animi ad nobis nam assumenda quos illo voluptatem! Voluptatem sit laborum impedit, aspernatur pariatur officiis. Possimus magni velit dolore modi omnis, aspernatur praesentium consequatur. Nihil aliquam soluta accusamus architecto deserunt unde nobis at dolore iure fugit rem eos, deleniti ipsa praesentium commodi ducimus magni odit nemo possimus tenetur consequuntur? Aspernatur consectetur laboriosam, tempora exercitationem nesciunt doloribus aliquam facilis ullam saepe quidem quibusdam libero! Nemo minus dolorum explicabo at accusantium. Incidunt fuga reprehenderit pariatur possimus cumque sapiente facere commodi.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dolore labore pariatur enim, aliquam iure officiis est laboriosam sequi voluptatum esse, culpa animi ad nobis nam assumenda quos illo voluptatem! Voluptatem sit laborum impedit, aspernatur pariatur officiis. Possimus magni velit dolore modi omnis, aspernatur praesentium consequatur. Nihil aliquam soluta accusamus architecto deserunt unde nobis at dolore iure fugit rem eos, deleniti ipsa praesentium commodi ducimus magni odit nemo possimus tenetur consequuntur? Aspernatur consectetur laboriosam, tempora exercitationem nesciunt doloribus aliquam facilis ullam saepe quidem quibusdam libero! Nemo minus dolorum explicabo at accusantium. Incidunt fuga reprehenderit pariatur possimus cumque sapiente facere commodi.
+  </p>
+</div>
+</body>
+</html>
+
+
+
+
+
+
